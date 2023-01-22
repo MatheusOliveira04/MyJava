@@ -1,0 +1,27 @@
+package model_services;
+
+import java.time.LocalDate;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+import model_entities.Contract;
+import model_entities.Installment;
+
+public class ContractService {
+
+	private OnlinePaymentService onlinePaymentService;
+	
+	public ContractService(OnlinePaymentService onlinePaymentService) {
+		this.onlinePaymentService = onlinePaymentService;
+	}
+
+	void processContract(Contract contract, int months) {
+		
+		contract.getInstalments().add(new Installment(LocalDate.of(2018, 7, 25), 206.04));
+		contract.getInstalments().add(new Installment(LocalDate.of(2018, 8, 25), 208.08));
+	}
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;model_services.ProcessInvoice&apos; to &apos;RentalService&apos;&#x0D;&#x0A;- Original project: &apos;Exercicio_Locadora&apos;&#x0D;&#x0A;- Original element: &apos;model_services.ProcessInvoice&apos;&#x0D;&#x0A;- Renamed element: &apos;model_services.RentalService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ProcessInvoice&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;model_services{ProcessInvoice.java[ProcessInvoice" matchStrategy="1" name="RentalService" qualified="false" references="true" similarDeclarations="false" stamp="1673453535175" textual="false" version="1.0"/>
+</session>

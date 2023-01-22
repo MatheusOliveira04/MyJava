@@ -1,0 +1,30 @@
+package hashSet_TreeSet;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Program {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Set<String> set1 = new HashSet<>(); //+ Rápido & Não ordena
+		Set<String> set = new TreeSet<>(); // - Rápido & Ordena (por ordem alfabética) 
+		 	
+		set.add("Tv");
+		set.add("Notebook");
+		set.add("Tablet");
+		
+		set.remove("Tablet");
+		
+		System.out.println(set.contains("Tv"));
+		
+		for(String s : set) {
+			System.out.println(s + "");
+		}
+	}
+
+}

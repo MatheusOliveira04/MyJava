@@ -1,0 +1,19 @@
+package model_services;
+
+import model_entities.Contract;
+
+public class ContractService {
+
+	private OnlinePaymentService ops;
+	
+	public ContractService(OnlinePaymentService ops) {
+		super();
+		this.ops = ops;
+	}
+
+	void processContract(Contract conctract, int months) {
+		
+	}
+	
+	
+}

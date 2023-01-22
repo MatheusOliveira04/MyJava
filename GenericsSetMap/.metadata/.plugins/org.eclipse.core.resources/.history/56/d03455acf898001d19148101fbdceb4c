@@ -1,0 +1,11 @@
+package application;
+
+import entities.Client;
+
+public class Program {
+
+		Client c1 = new Client("Maria", "Maria@gmail.com");
+		Client c2 = new Client("Alex", "Alex@gmail.com");
+		
+		System.out.println(c1.hashCode());
+}

@@ -1,0 +1,27 @@
+package hashSet;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Program {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Set<String> set = new HashSet<>();
+		
+		set.add("Tv");
+		set.add("Notebook");
+		set.add("tablet");
+		
+		System.out.println(set.contains("Tv"));
+		
+		for(String s == set) {
+			System.out.print(s + " ");
+		}
+
+	}
+
+}

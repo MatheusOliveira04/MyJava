@@ -1,0 +1,47 @@
+package application;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.util.Scanner;
+
+import model_entities.CarRental;
+import model_entities.Vehicle;
+import model_services.BrazilTaxService;
+import model_services.RentalService;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner ler = new Scanner(System.in);
+		DateTimeFormatter ftm = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		System.out.println("Entre com os dados do aluguel");
+		System.out.print("Modelo do carro: ");
+		String model = ler.nextLine();
+		System.out.print("Retirada (dd/MM/yyyy hh:mm): ");
+		LocalDateTime start = LocalDateTime.parse(ler.next(), ftm);
+		System.out.print("Retorno (dd/MM/yyyy hh:mm): ");
+		LocalDateTime finish = LocalDateTime.parse(ler.next(), ftm);
+		
+		CarRental cr = new CarRental(start, finish, new Vehicle(model));
+		
+		System.out.print("Entre com o preço por hora: ");
+		double hourV = ler.nextDouble();
+		System.out.print("Entre com o preço por dia: ");
+		double dayV = ler.nextDouble();
+		
+		RentalService rs = new RentalService(hourV, dayV, new BrazilTaxService());
+		rs.processInvoide(cr);
+		
+		System.out.println("FATURA:");
+		System.out.println("Pagamento basico: " + String.format("%.2f", cr.getInvoice().getBasicPayment()));
+		System.out.println("Imposto: " + String.format("%.2f", cr.getInvoice().getTax()));
+		System.out.println("Pagamento total: " + String.format("%.2f", cr.getInvoice().getTotalPayment()));
+		
+		ler.close();
+	}
+
+}

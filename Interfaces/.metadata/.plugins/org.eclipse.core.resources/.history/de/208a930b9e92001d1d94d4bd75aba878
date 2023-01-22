@@ -1,0 +1,12 @@
+package model_services;
+
+public class BrazilTaxService {
+
+	public double tax(double amount) implements TaxService{
+		if(amount <= 100) {
+			return amount * 0.20;
+		} else {
+			return amount *0.15;
+		}
+	}
+}

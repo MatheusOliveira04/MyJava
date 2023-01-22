@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class tes {
+
+	public static void main(String[] args) {
+		
+		List<Object> myObjs = new ArrayList<Object>();
+		myObjs.add("Maria");
+		myObjs.add(5);
+		List<? super Number> myNums = myObjs;
+		myNums.add(10);
+		myNums.add(3.14);
+		myNums.add(1.158971);
+
+		for(Object a : myNums) {
+			System.out.print(a + " ");
+		}
+		
+		System.out.println();
+		
+		List<Integer> intList = new ArrayList<Integer>();
+		intList.add(101);
+		intList.add(52);
+		intList.add(9);
+		List<? extends Number> list = intList;
+		Number x = list.get(0);
+		for(Number a : list) {
+			System.out.print(a + " ");
+		}
+	}
+
+}

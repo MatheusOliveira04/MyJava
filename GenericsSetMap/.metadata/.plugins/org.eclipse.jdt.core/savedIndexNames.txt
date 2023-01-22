@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+C:\Users\samat\OneDrive\Documentos\Programação\ProjetosJava\Udemy - Java Nelio Alves\GenericsSetMap\.metadata\.plugins\org.eclipse.jdt.core
+725609519.index
+3043671354.index
+3359807269.index
+4124700355.index
+4097727055.index
+2173162792.index
+3251153850.index
+735705145.index
+1865797976.index
+2974452235.index
+3098040696.index
+2872271997.index

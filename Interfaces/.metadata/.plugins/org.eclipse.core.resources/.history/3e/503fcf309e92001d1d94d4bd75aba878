@@ -1,0 +1,9 @@
+package model_services;
+
+public class RentalService {
+
+	private Double pricePerHour;
+	private Double pricePerDay;
+	
+	
+}

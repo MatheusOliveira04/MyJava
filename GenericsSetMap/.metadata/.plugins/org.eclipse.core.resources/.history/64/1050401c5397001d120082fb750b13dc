@@ -1,0 +1,25 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Shape;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		List<Shape> list = new ArrayList<>();
+		
+		
+		public static double totalArea(List<? extends Shape> list) {
+			double sum = 0.0;
+			for(Shape s : list) {
+				sum += s.area();
+			}
+			return sum;
+		}
+
+	}
+
+}

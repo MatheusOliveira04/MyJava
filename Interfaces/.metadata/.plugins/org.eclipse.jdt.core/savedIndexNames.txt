@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\samat\OneDrive\Documentos\Programação\ProjetosJava\Udemy - Java Nelio Alves\Interfaces\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+748648163.index
+1372677264.index
+1381532946.index
+2024917932.index
+3082995595.index
