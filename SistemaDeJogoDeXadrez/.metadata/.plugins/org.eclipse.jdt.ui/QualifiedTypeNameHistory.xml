@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="chess.ChessMatch"/>
     <fullyQualifiedTypeName name="chess.ChessPiece"/>
+    <fullyQualifiedTypeName name="boardgame.Position"/>
 </qualifiedTypeNameHistroy>
