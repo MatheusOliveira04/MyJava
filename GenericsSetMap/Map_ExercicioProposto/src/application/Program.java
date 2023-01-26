@@ -21,7 +21,6 @@ public class Program {
 				String[] fields = line.split(",");
 				String name = fields[0];
 				int quantos = Integer.parseInt(fields[1]);
-				map.put(name, quantos);
 				
 				if (map.containsKey(name)) {
 					int votos = map.get(name);
@@ -31,6 +30,9 @@ public class Program {
 					map.put(name, quantos);
 				}
 				line = br.readLine();
+			}
+			for (String key : map.keySet()) {
+				System.out.println(key + ": " + map.get(key));
 			}
 
 		} catch (IOException e) {

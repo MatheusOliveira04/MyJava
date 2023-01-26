@@ -18,7 +18,7 @@ public class Program {
 		Scanner ler = new Scanner(System.in);
 		
 		System.out.println("Enter file path: ");
-		String path = ler.nextLine();
+		String path = ler.nextLine(); //C:\temp\in2.txt
 		
 		Set<LogEntry> set = new HashSet<>();
 		
