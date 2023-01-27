@@ -28,7 +28,7 @@ public class Program {
 		//List<String> name = list.stream().map(Product::nonStaticFunction).collect(Collectors.toList()); //or
 		List<String> name = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList()); //or
 		
-		name.forEach(System.out::println);
+		name.forEach(System.out::println);//
 	}
 
 }
